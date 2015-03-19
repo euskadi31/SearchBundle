@@ -1,0 +1,25 @@
+{
+    "name": "euskadi31/search-bundle",
+    "license": "MIT",
+    "type": "bundle",
+    "description": "A Search Bundle for Symfony 2",
+    "keywords": ["sphinx", "sphinxql", "search", "symfony"],
+    "authors": [
+        {
+            "name": "Axel Etcheverry",
+            "email": "axel@etcheverry.biz",
+            "homepage": "https://twitter.com/euskadi31"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Euskadi31": "src/"
+        }
+    },
+    "require": {
+        "php": ">=5.3.3",
+        "symfony/framework-bundle": "~2.1",
+        "euskadi31/search-php": "~0.1",
+        "psr/log": "~1.0"
+    }
+}

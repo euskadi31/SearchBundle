@@ -1,0 +1,6 @@
+services:
+    search:
+        class: %search_engine%
+        arguments: [%search_host%, %search_port%]
+        calls:
+            - [setEventDispatcher, [@event_dispatcher]]

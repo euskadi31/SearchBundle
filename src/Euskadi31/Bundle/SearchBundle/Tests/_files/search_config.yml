@@ -1,0 +1,5 @@
+euskadi31_search:
+    engine: Search\Engine\SphinxQL
+    server:
+        host: 127.0.0.1
+        port: 9306
