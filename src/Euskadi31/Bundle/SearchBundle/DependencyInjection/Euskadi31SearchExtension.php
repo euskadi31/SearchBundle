@@ -34,6 +34,8 @@ class Euskadi31SearchExtension extends Extension
         $loader = new Loader\YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');
 
+        $container->setParameter('search_cache_driver', $config['cache']['driver']);
+        $container->setParameter('search_cache_life', $config['cache']['life']);
         $container->setParameter('search_engine', $config['engine']);
         $container->setParameter('search_host', $config['server']['host']);
         $container->setParameter('search_port', $config['server']['port']);

@@ -1,6 +1,10 @@
 services:
+    search_cache:
+        class: %search_cache_driver%
     search:
         class: %search_engine%
         arguments: [%search_host%, %search_port%]
         calls:
             - [setEventDispatcher, [@event_dispatcher]]
+            - [setCache, [@search_cache]]
+            - [setCacheLife, [%search_cache_life%]]

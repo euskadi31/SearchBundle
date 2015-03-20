@@ -1,5 +1,6 @@
 euskadi31_search:
     engine: Search\Engine\SphinxQL
+    cache: ~
     server:
         host: 127.0.0.1
         port: 9306
